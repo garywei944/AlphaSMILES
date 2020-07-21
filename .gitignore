@@ -104,4 +104,5 @@ venv.bak/
 .mypy_cache/
 
 data_in/all_smiles
-/data_out
+data_out/*
+rnn_models/*

@@ -7,10 +7,10 @@ This code help you to prepare the json file of configuration to train the rnn
 config = dict()
 
 # name of your configuration
-config['configuration_name'] = "test_data_base_dft"
+config['configuration_name'] = "mcts_test"
 
 # rnn directory (the name of the rnn configuration)
-config['rnn_repertory'] = "rnn_aromatic"
+config['rnn_repertory'] = "rnn_test"
 
 # long prefix, the RNN and MCTS won't see it until the properties are calculated
 # use it if the prefix is really long (more than 15 tokens approximately)
@@ -36,7 +36,7 @@ config['proba_min'] = 0.0001
 
 # multitasking
 config['n_jobs'] = 4
-config['nb_core_dft'] = 4
+config['nb_core_dft'] = 12
 
 config['properties'] = [("mcts.properties.properties", "SAScoreProperty2DDecorator"),
                         ("mcts.properties.properties", "CycleProperty2DDecorator"),
@@ -48,7 +48,7 @@ config['scorer'] = ("mcts.scorer.scorer", 'ScorerDFT')
 config['alpha_scorer'] = 1
 
 # Name of the general data base (in the folder *data_out/*)
-config["data_base"] = "3-21G"
+config["data_base"] = "test_output"
 
 with open('../mcts/configurations/' + config['configuration_name'] + '.json', 'w') as conf:
     json.dump(config, conf)

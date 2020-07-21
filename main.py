@@ -7,7 +7,7 @@ if no_warning:
     import os
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
     import tensorflow as tf
-    tf.logging.set_verbosity(tf.logging.ERROR)
+    # tf.logging.set_verbosity(tf.logging.ERROR)
 
 if no_gpu:
     import os
@@ -16,9 +16,9 @@ if no_gpu:
 
 if train_rnn:
     from rnn.rnn import create_rnn
-    create_rnn('boot_2.1_200M')
+    create_rnn('rnn_test')
 
 if launch_mcts:
     from mcts.mcts import load_parameters_mcts, launch
-    load_parameters_mcts('test_data_base_dft')
+    load_parameters_mcts('mcts_test')
     launch()
