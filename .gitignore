@@ -106,3 +106,7 @@ venv.bak/
 data_in/all_smiles
 data_out/*
 rnn_models/*
+*.inp
+
+/Gau*
+*.pkl
