@@ -7,7 +7,7 @@ This code help you to prepare the json file of configuration to train the rnn
 config = dict()
 
 # name of your configuration
-config['configuration_name'] = "rnn_test"
+config['configuration_name'] = "rnn_sample"
 
 # name of the file containing all SMILES in the folder 'data_in'
 # one SMILES per line
