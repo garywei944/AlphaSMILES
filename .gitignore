@@ -103,9 +103,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-data_in/all_smiles
-data_out/*
-rnn_models/*
 *.inp
 
 /Gau*
